@@ -21,18 +21,29 @@ body {
 }
 
 .main-text {
-    font-size: 1.5rem;
-    width: 31.667rem;
+    font-size: 1.3rem;
+    width: 31rem;
+    height: auto;
     padding: 0;
     margin: 0;
     line-height: 1.5;
-    font-weight: 550;
+    font-weight: 500;
 }
 
 .main-text-wrapper {
     line-height: 1.5;
     margin-top: 1.33rem;
 }
+
+.main-text-img {
+    width: 30%;
+    height: auto;
+}
+
+@media (min-width: 475px) {
+
+}
+
 
 /* main-button */
 .main-button-container {
@@ -49,7 +60,7 @@ body {
         margin-left: -3.888rem;
         margin-right: -3.888rem;
     }
-
+}
 .main-btn,
 .main-btn-1 {
     overflow: hidden;
