@@ -36,12 +36,8 @@ body {
 }
 
 .main-text-img {
-    width: 30%;
+    width: 35%;
     height: auto;
-}
-
-@media (min-width: 475px) {
-
 }
 
 
@@ -51,6 +47,7 @@ body {
     padding: 4rem 1.333rem 2.5rem;
     overflow: visible;
     display: flex;
+    gap: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -61,8 +58,7 @@ body {
         margin-right: -3.888rem;
     }
 }
-.main-btn,
-.main-btn-1 {
+.main-btn {
     overflow: hidden;
     position: relative;
     width: 100%;
@@ -70,4 +66,15 @@ body {
     background-color: #262626;
     cursor: pointer;
     padding: 10px 30px;
+    transition: transform 0.3s ease;
+}
+
+.main-btn img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.main-btn:hover {
+    transform: translateY(-10px);
 }
