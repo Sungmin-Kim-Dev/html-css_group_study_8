@@ -78,3 +78,73 @@ body {
 .main-btn:hover {
     transform: translateY(-10px);
 }
+
+
+/* TOP18 */
+.main-watched1{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.main-watched2{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.main-watched:hover{
+    .main-watched-second-line a{
+        display: block;
+        
+    }
+
+    .main-watched-second-line a:hover{
+        font-size: 1.1em;
+    }
+}
+
+.card:hover{
+    position: relative;
+    bottom: 10px;
+}
+
+.card:hover + .icon-move{
+    color: black;
+}
+
+.main-watched-first-line{
+    font-size: 1.333rem;
+    font-weight: 700;
+}
+
+.main-watched-second-line a{
+    display:none;
+    font-size: medium;
+    font-weight: 700;
+    text-decoration: none;
+    color: gray;
+}
+
+.card-line{
+    display: flex;
+    justify-content: space-between;
+    border-top: 4.5px solid red;
+}
+
+.icon-move{
+    position: absolute;
+    top: 150px;
+    font-size: 100px;
+    color: aliceblue;
+}
+
+@media screen and (max-width:48rem){
+    .main-watched1{
+        display: flex;
+        flex-direction: column;
+    }
+    .main-watched2{
+        display: flex;
+        flex-direction: column;
+    }
+}
