@@ -11,35 +11,39 @@
   <script src="https://kit.fontawesome.com/f12998d844.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-  <header>
+<body class="bg-black">
+  <header class="fixed-top bg-black">
+    <nav class="navbar px-5">
+      <!-- <div class="container-fluid px-5"> -->
+      <a class="navbar-brand" href="#">
+        <img src="https://image.tving.com/ntgs/operation/logo/2023/09/18/1695032536_1.svg" alt="로고">
+      </a>
+      <ul class="navbar-nav me-auto mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#">시리즈</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">영화</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">라이브</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">파라마운트+</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">KBO</a>
+        </li>
+      </ul>
 
-    <nav class="navbar">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img
-            src="https://image.tving.com/ntgs/operation/logo/2023/09/18/1695032536_1.svg" alt="로고"></a>
-        <ul class="navbar-nav me-auto mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="#">시리즈</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">영화</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">라이브</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">파라마운트+</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">KBO</a>
-          </li>
-        </ul>
-        <button class="nav-search-btn"></button>
-        <div class="menu-my">
-          <img src="https://image.tving.com/upload/profile/IG00000001_IMAGE_4.png/dims/resize/F_webp,100"
-            class="user-img" alt="사용자이미지">
-        </div>
+      <button class="nav-search-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+        aria-controls="offcanvasTop"></button>
+
+      <!-- top right menu -->
+      <div class="menu-my">
+        <img src="https://image.tving.com/upload/profile/IG00000001_IMAGE_4.png/dims/resize/F_webp,100" class="user-img"
+          alt="사용자이미지">
+        <!-- top right popup menu -->
         <div class="menu-my-popup-wrap">
           <div class="profile">
             <div class="profile_img">
@@ -47,25 +51,29 @@
                 class="user-img-sub" alt="사용자이미지">
             </div>
             <div class="profile_info">
-              <p class="profile_info_name">몽상가</p>
-              <button type="button" class="profile_info_change">
+              <p class="profile_info_name">누나누나</p>
+              <a href="#" class="profile_info_change">
                 <span>프로필 전환</span>
-              </button>
+                <i class="fa-solid fa-greater-than"></i>
+              </a>
             </div>
           </div>
           <hr>
           <ul class="menu_my_btn_wrap">
-            <li><a href="#">MY</a></li>
-            <li><a href="#">이용권</a></li>
-            <li><a href="#">쿠폰등록</a></li>
-            <li><a href="#">고객센터</a></li>
-            <li><a href="#">로그아웃</a></li>
+            <li><a href="#" class="menu-my-link">MY</a></li>
+            <li><a href="#" class="menu-my-link">이용권</a></li>
+            <li><a href="#" class="menu-my-link">쿠폰등록</a></li>
+            <li><a href="#" class="menu-my-link">고객센터</a></li>
+            <li><a href="#" class="menu-my-link">로그아웃</a></li>
           </ul>
-        </div>
+        </div> <!-- top right popup menu -->
       </div>
+      <!-- </div> -->
     </nav>
   </header>
 
+  <main class="bg-white">
+  </main>
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

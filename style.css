@@ -2,13 +2,16 @@
 
 body {
   font-family: "Noto Sans KR", sans-serif;
-  position: relative;
-  background-color: white;
-  color: #fff;
 }
 
-header {
-  background-color: black;
+a {
+  text-decoration: none;
+  color: #d9d9d9;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar-brand > img {
@@ -17,7 +20,7 @@ header {
 
 .navbar-nav {
   flex-direction: row;
-  gap: clamp(1.25rem, 1.702vw + 0.798rem, 2.5rem);
+  gap: clamp(0.75rem, 1.873vw + 0.253rem, 2.5rem);
   align-items: center;
 }
 
@@ -26,25 +29,105 @@ header {
 }
 .nav-link {
   color: #d9d9d9;
-  font-size: clamp(0.75rem, 1.021vw + 0.479rem, 1.5rem);
+  font-size: clamp(0.625rem, 0.936vw + 0.376rem, 1.5rem);
 }
 
 .nav-search-btn {
   width: clamp(1.125rem, 1.532vw + 0.718rem, 2.25rem);
   height: clamp(1.125rem, 1.532vw + 0.718rem, 2.25rem);
-  color: #fff;
   background: url(https://www.tving.com/img/icon_search.svg) no-repeat center/100%;
   background-color: transparent;
   border: none;
-  margin-right: clamp(1.25rem, 1.702vw + 0.798rem, 2.5rem);
+  margin-right: clamp(1rem, 1.605vw + 0.574rem, 2.5rem);
   opacity: 0.7;
 }
 
-.menu-my {
+.nav-search-btn:hover {
+  opacity: 1;
 }
 
+.offcanvas.offcanvas-top {
+  top: calc(clamp(1.125rem, 1.532vw + 0.718rem, 2.25rem) + 3rem);
+}
+
+
+
+/* top right img */
 .user-img {
   width: clamp(1.125rem, 1.532vw + 0.718rem, 2.25rem);
   height: clamp(1.125rem, 1.532vw + 0.718rem, 2.25rem);
   /* width: 100%; */
+}
+
+.menu-my {
+  position: relative;
+  padding: 1rem 0;
+}
+
+.menu-my:hover .menu-my-popup-wrap {
+  display: block;
+}
+
+/* popup menu starts here */
+header {
+  position: relative;
+}
+
+.menu-my-popup-wrap {
+  width: clamp(10rem, 6.689vw + 7.157rem, 20rem); /* responsive */
+  position: absolute;
+  top: calc(clamp(1.125rem, 1.532vw + 0.718rem, 2.25rem) + 2rem); /* responsive */
+  right: 0;
+  border: solid 1px #4d4d4d;
+  background-color: #212121;
+  padding: clamp(0.75rem, 0.502vw + 0.537rem, 1.5rem) 0 clamp(0.5625rem, 0.376vw + 0.403rem, 1.125rem); /* responsive */
+  display: none;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  padding-inline: clamp(0.8125rem, 0.543vw + 0.582rem, 1.625rem); /* responsive */
+}
+
+.profile_img {
+  width: clamp(1.78125rem, 1.108vw + 1.31rem, 3.4375rem); /* responsive */
+  margin-right: clamp(0.625rem, 0.418vw + 0.447rem, 1.25rem); /* responsive */
+}
+.user-img-sub {
+  width: 100%;
+}
+
+.profile_info_name {
+  margin: 0;
+  font-size: clamp(0.625rem, 0.418vw + 0.447rem, 1.25rem); /* responsive */
+  color: #d9d9d9;
+}
+
+.profile_info_change {
+  display: block;
+  font-size: clamp(0.5rem, 0.334vw + 0.358rem, 1rem); /* responsive */
+  span {
+    margin-right: 3px;
+  }
+}
+.profile_info_change:hover {
+  color: white;
+}
+
+.menu-my-popup-wrap hr {
+  border-color: #2e2e2e;
+  height: 1px;
+  opacity: 1;
+  margin: 0.8rem 0;
+}
+
+.menu-my-link {
+  font-size: clamp(0.625rem, 0.418vw + 0.447rem, 1.25rem); /* responsive */
+  display: block;
+  padding: clamp(0.25rem, 0.167vw + 0.179rem, 0.5rem) clamp(0.8125rem, 0.543vw + 0.582rem, 1.625rem); /* responsive */
+}
+.menu-my-link:hover {
+  background-color: #2e2e2e;
+  color: #fff;
 }
