@@ -16,7 +16,7 @@
     <nav class="navbar px-5">
       <!-- <div class="container-fluid px-5"> -->
       <a class="navbar-brand" href="#">
-        <img src="https://image.tving.com/ntgs/operation/logo/2023/09/18/1695032536_1.svg" alt="로고">
+        <img src="image/logo.svg" alt="로고">
       </a>
       <ul class="navbar-nav me-auto mb-lg-0">
         <li class="nav-item">
@@ -38,7 +38,90 @@
 
       <button class="nav-search-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
         aria-controls="offcanvasTop"></button>
-
+      <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+        <div class="offcanvas-header">
+          <label class="search-input">
+            <input id="search-text" type="text" placeholder="제목, 인물명을 입력해보세요." class="search-text-input me-auto"
+              value="">
+            <button type="button" class="nav-search-btn"></button>
+          </label>
+          <div data-bs-theme="dark">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="offcanvas-body">
+          <div class="row">
+            <ul class="col">
+              <h2 class="search-subtitle text-white">최근 검색어</h2>
+              <li class="search-subtext text-white-50">검색 내역이 없습니다.</li>
+            </ul>
+            <ul class="col offcanvas-body-right">
+              <h2 class="search-subtitle text-white">실시간 인기 검색어</h2>
+              <li>
+                <a href="#" class="search-term-link">
+                  <span class="search-number">1</span>
+                  <h3 class="search-keyword">여고추리반3</h3>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="search-term-link">
+                  <span class="search-number">2</span>
+                  <h3 class="search-keyword">한공주</h3>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="search-term-link">
+                  <span class="search-number">3</span>
+                  <h3 class="search-keyword">지락이의 뛰뛰빵빵</h3>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="search-term-link">
+                  <span class="search-number">4</span>
+                  <h3 class="search-keyword">귀멸의 칼날: 합동 강화 훈련편</h3>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="search-term-link">
+                  <span class="search-number">5</span>
+                  <h3 class="search-keyword">나는 SOLO, 그후 사랑은 계속된다</h3>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="search-term-link">
+                  <span class="search-number">6</span>
+                  <h3 class="search-keyword">돌싱글즈5</h3>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="search-term-link">
+                  <span class="search-number">7</span>
+                  <h3 class="search-keyword">선재 업고 튀어</h3>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="search-term-link">
+                  <span class="search-number">8</span>
+                  <h3 class="search-keyword">유 퀴즈 온 더 블럭</h3>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="search-term-link">
+                  <span class="search-number">9</span>
+                  <h3 class="search-keyword">I-LAND2</h3>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="search-term-link">
+                  <span class="search-number">10</span>
+                  <h3 class="search-keyword">나는 SOLO</h3>
+                </a>
+              </li>
+              <span class="search-time text-white-50">2024.06.08 오전 01:06 기준</span>
+            </ul>
+          </div>
+        </div>
+      </div>
       <!-- top right menu -->
       <div class="menu-my">
         <img src="https://image.tving.com/upload/profile/IG00000001_IMAGE_4.png/dims/resize/F_webp,100" class="user-img"
