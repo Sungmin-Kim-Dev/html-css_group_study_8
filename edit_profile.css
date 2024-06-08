@@ -1,0 +1,13 @@
+.box {
+    position: absolute;
+
+
+.edit-icon {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    transform: translate(-50%, -50%);
+    width: 30px; /* 적절한 크기로 조정하세요 */
+    height: 30px; /* 적절한 크기로 조정하세요 */
+    opacity: 0.9; /* 투명도 조정 */
+}
