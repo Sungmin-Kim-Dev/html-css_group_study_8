@@ -2,6 +2,8 @@
 
 body {
   font-family: "Noto Sans KR", sans-serif;
+  color: white;
+  overflow-x: hidden;
 }
 
 a {
@@ -195,56 +197,250 @@ header {
   padding-top: 1em;
   display: block;
 }
+/* header ends here */
 
+/* main starts here */
+/* main-banner */
 
+.carousel-item {
+  position: relative;
+}
 
+.main-img {
+  border-radius: 4px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
 
+.main-banner-text {
+  position: absolute;
+  bottom: 8%;
+  left: 8%;
+  width: 84%;
+  height: auto;
+}
 
+.main-text {
+  font-size: 1.4vw;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  line-height: 1.5;
+  font-weight: 500;
+}
 
+.main-text-wrapper {
+  line-height: 1.5;
+  margin-top: 1.33rem;
+}
 
+.main-text-img {
+  width: 40%;
+  height: auto;
+}
 
+/* main-button */
+.main-button-container {
+  overflow: visible;
+  display: flex;
+  gap: 1rem;
+}
 
+.main-btn {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  border-radius: 4px;
+  background-color: #262626;
+  cursor: pointer;
+  padding: 10px 30px;
+  transition: transform 0.3s ease;
+}
 
+.main-btn img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
+.main-btn:hover {
+  transform: translateY(-10px);
+}
 
+/* TOP18 */
 
+.main-watched1 {
+  display: flex;
+  justify-content: space-between;
+}
 
+.main-watched2 {
+  overflow-x: hidden;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 10px;
+  overflow-x: auto;
+}
 
+.main-watched:hover {
+  .main-watched-second-line a {
+    display: block;
+  }
 
+  .main-watched-second-line a:hover {
+    font-size: 1.1em;
+  }
+}
 
+.main-watched-first-line {
+  font-size: 1.333rem;
+  font-weight: 700;
+}
 
+.main-watched-second-line a {
+  display: none;
+  font-size: medium;
+  font-weight: 700;
+  text-decoration: none;
+  color: gray;
+}
 
+@media screen and (max-width: 48rem) {
+  .main-watched1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-watched2 {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
+.card {
+  transition: transform 0.3s ease;
+  min-width: 150px;
+}
 
+.card:hover {
+  transform: translateY(-10px);
+}
 
+.card-number {
+  margin-top: 290px;
+  margin-right: 5px;
+  width: auto;
+  height: 10%;
+}
 
+/* 케러셀 좌우 버튼 조정 */
+.carousel-control-prev,
+.carousel-control-next {
+  z-index: 2;
+  width: 13%;
+}
 
+.carousel-control-prev {
+  left: -5%;
+}
 
+.carousel-control-next {
+  right: -5%;
+}
 
+/* 추가 수정 */
 
+.main-watched2 .carousel-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
 
+@media (max-width: 768px) {
+  .main-watched2 .card,
+  .main-watched2 .card-number {
+    width: 120px;
+    height: auto;
+  }
 
+  .main-watched2 .card img {
+    max-width: 100%;
+    height: auto;
+  }
 
+  .main-watched-first-line,
+  .main-watched-second-line {
+    font-size: 0.8rem;
+  }
+}
 
+.main-watched2 {
+  overflow-x: hidden;
+  white-space: nowrap;
+}
 
+.main-watched2 .card,
+.main-watched2 .card-number {
+  flex-shrink: 0;
+  width: auto;
+}
 
+.main-button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: auto;
+  padding: 10px 20px;
+  background-color: #000;
+  white-space: nowrap;
+}
 
+.main-btn {
+  flex: 1 1 auto;
+  margin: 0 10px;
+  min-width: 100px;
+  height: auto;
+  background-color: #333;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
 
+@media (max-width: 600px) {
+  .main-btn {
+    min-width: 80px;
+    font-size: 14px;
+  }
+}
 
+@media (max-width: 800px) {
+  .main-text,
+  .main-text-wrapper {
+    font-size: 2.5vw;
+  }
 
+  .main-watched2 .card img {
+    width: 100%;
+    height: auto;
+  }
 
+  .main-watched2 {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+/* main ends here */
 
-
-
-
-
-
-
-
-
-
-
-
+/* detail page starts here */
 .detailed-wrapper {
   margin: 0px;
   font-family: var(--bs-body-font-family);
