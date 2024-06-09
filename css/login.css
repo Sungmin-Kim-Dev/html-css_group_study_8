@@ -66,7 +66,7 @@ a {
   height: 85vh;
   text-align: center;
   max-height: 50rem;
-  background-image: url(/img/moweb-img-gradation-240320.png),
+  background-image: url(https://www.tving.com/img/pc-img-gradation-240320.png),
     url(https://image.tving.com/ntgs/operation/onboard/2024/05/01/1714526304_1.png/dims/resize/F_webp,720);
   -webkit-background-size: cover;
   background-size: cover;
@@ -90,13 +90,12 @@ a {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-@media (min-width: 500px) {
+@media (min-width: 1000px) {
   .login-main {
     height: 95vh;
     max-height: 68vw;
-    background-image: url(/img/pc-img-gradation-240320.png),
+    background-image: url(https://www.tving.com/img/pc-img-gradation-240320.png),
       url(https://image.tving.com/ntgs/operation/onboard/2024/05/01/1714526297_1.png/dims/resize/F_webp,2048);
-    background-color: rgba(0, 0, 0, 0.5); /* 반투명 오버레이 설정 */
   }
 }
 
@@ -174,7 +173,6 @@ a {
 }
 
 /* member-select starts here */
-
 .member-main {
   padding: 20px;
   margin-top: 80px;
@@ -227,5 +225,101 @@ a {
 
   .login-profile-img {
     justify-content: space-around;
+  }
+}
+
+/* social login starts here */
+
+#social-login-main {
+  background-image: url(https://image.tving.com/public/user/images/bg-dim.svg),
+    url(https://image.tving.com/ntgs/operation/onboard/2024/05/01/1714526297_1.png/dims/resize/F_webp,2048);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.social-login-wrapper {
+  padding-top: 150px;
+  width: 45%;
+}
+@media (max-width: 1000px) {
+  .social-login-wrapper {
+    width: 55%;
+  }
+}
+@media (min-width: 1600px) {
+  .social-login-wrapper {
+    width: 33%;
+  }
+}
+
+.social-login-text {
+  font-size: clamp(0.875rem, 2.043vw + 0.332rem, 2.375rem); /* responsive */
+  /* 14-38px */
+  text-align: center;
+  color: white;
+  margin: 3px;
+}
+
+.social-login-container {
+  margin-top: 23px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.social-login-btn {
+  font-size: clamp(0.5rem, 1.021vw + 0.229rem, 1.25rem); /* responsive */
+  /* 8-20px */
+  padding: 1.25em 0;
+  margin-bottom: 0.75em;
+  border-radius: 5px;
+  color: #a3a3a3;
+  cursor: pointer;
+  border: 1px solid #a3a3a3;
+  text-align: center;
+  background-color: transparent;
+  transition: all 0.5s;
+  background-repeat: no-repeat;
+  background-position: 1.5em 50%;
+  background-size: 1.8em auto;
+}
+.social-login-btn:hover {
+  border-color: #fff;
+  color: #fff;
+}
+
+.social-login-btn.icon-tving {
+  background-image: url(../images/social_login/icon-id-tving.svg);
+}
+.social-login-btn.icon-naver {
+  background-image: url(../images/social_login/icon-id-naver.svg);
+}
+.social-login-btn.icon-kakao {
+  background-image: url(../images/social_login/icon-id-kakao.svg);
+}
+.social-login-btn.icon-facebook {
+  background-image: url(../images/social_login/icon-id-face.svg);
+}
+.social-login-btn.icon-twitter {
+  background-image: url(../images/social_login/icon-id-twitter.svg);
+}
+.social-login-btn.icon-apple {
+  background-image: url(../images/social_login/icon-id-apple.svg);
+}
+.social-login-btn.icon-cj {
+  background-image: url(../images/social_login/icon-id-cj.png);
+}
+
+.social-pw-reset {
+  font-size: clamp(0.5rem, 1.021vw + 0.229rem, 1.25rem); /* responsive */
+  /* 7-18px */
+  text-align: center;
+  margin-top: 0.6em;
+  color: #6e6e6e;
+}
+.find-pw {
+  color: #a3a3a3;
+  &:hover {
+    color: #fff;
   }
 }
