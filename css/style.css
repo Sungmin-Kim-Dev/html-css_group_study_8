@@ -16,8 +16,7 @@ ul {
 }
 
 .navbar-brand > img {
-  /* width: clamp(4.1875rem, 8.34vw + 1.972rem, 10.3125rem); */
-  height: clamp(0.75rem, 0.803vw + 0.537rem, 1.5rem);
+  height: clamp(0.75rem, 0.803vw + 0.537rem, 1.5rem); /* responsive */
   /* 12-24px */
 }
 
