@@ -8,6 +8,7 @@ a {
   text-decoration: none;
   color: #d9d9d9;
 }
+
 ul {
   list-style: none;
   margin: 0;
@@ -45,10 +46,6 @@ ul {
 
 .nav-search-btn:hover {
   opacity: 1;
-}
-
-.offcanvas.offcanvas-top {
-  top: calc(clamp(1.125rem, 1.532vw + 0.718rem, 2.25rem) + 3rem);
 }
 
 /* top right img */
@@ -132,8 +129,10 @@ header {
   color: #fff;
 }
 
-/* offcanvas */
+/* offcanvas starts here */
+
 .offcanvas.offcanvas-top {
+  top: calc(clamp(1.125rem, 1.532vw + 0.718rem, 2.25rem) + 3rem);
   background-color: rgba(25, 25, 25, 0.99);
   padding: 0 clamp(2.5rem, 10.435vw + -0.272rem, 12.25rem) clamp(2.5rem, 2.408vw + 1.86rem, 4.75rem); /* responsive */
   height: fit-content;
